@@ -9,20 +9,19 @@ let httpServer = app.listen(port, function () {
 });
 
 let fs = require("fs"); // installera fs
+app.use(express.json()); // behövs för att processa data som skickats med POST
 const { time } = require("console");
-
-app.use(express.urlencoded({ extended: true })); // behövs för att processa data som skickats med POST
+app.use(express.urlencoded({ extended: true })); 
 
 //hämtar filer från mappen filer
 app.use(express.static('filer'));
+
+
 
 //hämtar login.html
 app.get("/", function (req, res) {
   res.sendFile(__dirname + "/index.html");
 });
-
-
-
 
 //gör en post request med username och password för att kunna komma till bloggsidan
 app.post("/login", function (req, res) {
@@ -64,7 +63,6 @@ app.post("/login", function (req, res) {
 });
 
 
-
 //hämtar nyttinlagg delen från min template.html
 app.get("/nyttinlagg", function (req, res) {
     res.sendFile(__dirname + "/template.html");
@@ -75,12 +73,19 @@ app.get("/nyttinlagg", function (req, res) {
 app.post("/nyttinlagg", function (req, res) {
     let nyttinlagg = req.body;
     nyttinlagg.Kommentar = begransaOrd(nyttinlagg.Kommentar, 200);
-    nyttinlagg.timestamp = new Date();
+    nyttinlagg.timestamp = new Date().toLocaleString('sv-SE', {
+      year: 'numeric',
+      month: 'numeric',
+      day: 'numeric',
+      hour: 'numeric',
+      minute: 'numeric',
+      hour12: false // Använd 24-timmarsformat
+  });
     let input = fs.readFileSync("users1.json").toString();
     input = JSON.parse(input);
     input.push(nyttinlagg);
     input.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
-    fs.writeFileSync("users1.json", JSON.stringify(input));
+    fs.writeFileSync("users1.json", JSON.stringify(input, null, 2));
     let output = "";
     for (let i in input){
       //när man skriver ett nytt inlägg så skrivs det ut på bloggsidan och uppdateras direkt
