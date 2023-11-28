@@ -18,7 +18,7 @@ app.use(express.static('filer'));
 
 //hämtar login.html
 app.get("/", function (req, res) {
-  res.sendFile(__dirname + "/login.html");
+  res.sendFile(__dirname + "/index.html");
 });
 
 
@@ -57,7 +57,7 @@ app.post("/login", function (req, res) {
     res.send(html);
   } else {
     errorMessage = "Fel användarnamn eller lösenord!";
-    let loginPage = fs.readFileSync("login.html").toString();
+    let loginPage = fs.readFileSync("index.html").toString();
     loginPage = loginPage.replace('<p id="errorMessage"></p>', ''); 
     res.send(loginPage + '<script>setErrorMessage("' + errorMessage + '");</script>');
   }
