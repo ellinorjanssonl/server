@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    
+    <link rel ="stylesheet" href="style.css">
+    <title>Bloggpage</title>
+  </head>
+  <body>
+    <div class="intro">
+      <h1> VÄLKOMMEN TILL BLOGGEN </h1>
+      <p> Här kan du skriva ditt egna blogginlägg!<br>
+        Du måste skriva ett eget inlägg för att kunna läsa andras inlägg.<br>
+        Lycka till! </p> 
+     
+      <div class="box">
+        <div>
+        <h3> Skriv ditt inlägg här nedanför! </h3>
+        </div>
+         <form id="form" action="/nyttinlagg" method="post">
+           <label for="namn">Skriv ditt namn:</label>
+           <input type="text" id="namn" name="namn" required/>
+           <label for="email">Skriv din email:</label>
+           <input type="text" id="email" name="Email" required/>
+           <label for="Adress">Skriv din adress:</label>
+           <input type="text" id="adress" name="Adress" required/>
+           <label for="kommentar">Skriv ett inlägg:</label>
+           <textarea id="kommentar" name="Kommentar" rows="4"></textarea>
+           <input type="submit" id="skicka" name="submit"/>
+         </form>
+        </div>
+     <div class="blogginlagg">  
+      <h2>ALLA BLOGGINLÄGG!</h2>
+    </div>
+     
+     <div class="inlagg-ram">
+      ***BLOGGINLÄGG***
+   </div>
+    </div> 
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel ="stylesheet" href="style.css">
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="intro">
+       
+      <h1> LOGGA IN PÅ BLOGGEN </h1> 
+      <p> Du måste logga in för att kunna skriva och läsa andras inlägg.<br>
+        Lycka till! </p> 
+      <div img=""id="bild"></div>
+
+      </div>
+      <div class="box">
+        <div>
+        <h3> Välkommen hit!</h3>
+        </div>
+        <body>
+          <script>
+            // Funktion för att sätta felmeddelandet dynamiskt
+            function setErrorMessage(message) {
+                document.getElementById('errorMessage').innerText = message;
+            }
+        </script>
+          <p id="errorMessage">LOGGA IN</p>
+        <form id="login" action="/login" method="post">
+        <label for="username">Användarnamn:</label>
+        <input type="text" id="username" name="username" />
+        <label for="password">Lösenord:</label>
+        <input type="password" id="password" name="password" />
+        <input type="submit" id="submit" href="template.html" />
+        </form>
+        
+        </body>
+        </html>

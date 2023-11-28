@@ -1,0 +1,222 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    background-image: url("mountais.jpg");
+    background-color: rgb(155, 130, 153);
+    margin: 0 auto;
+    display: block;
+    background-repeat: no-repeat;
+}
+
+#form label{
+    margin-top: 4%;
+    text-align: center;
+    display: block;
+
+}
+#form {
+    margin-top: 2%;
+    text-align: center;
+    display: block;
+}
+
+#form input{
+    color:rgb(10, 10, 10);
+    background-color:rgba(136, 71, 127, 0.2);
+    border: 1px inset rgb(97, 94, 98);
+    border-radius: 15px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+input{
+    background-color:rgba(136, 71, 127, 0.2);
+    border: 1px inset rgb(97, 94, 98);
+    text-align: center;
+    display: block;
+}
+
+#username{
+    color:rgb(10, 10, 10);
+    background-color:rgba(136, 71, 127, 0.2);
+    border-radius: 15px;
+    text-align: center;
+    border: 1px inset rgb(97, 94, 98);
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+}
+
+#password{
+    color:rgb(10, 10, 10);
+    background-color:rgba(136, 71, 127, 0.2);
+    border-radius: 15px;
+    text-align: center;
+    border: 1px inset rgb(97, 94, 98);
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+}
+
+#submit{
+    margin-top: 5%;
+    color:rgb(129, 126, 133);
+    background-color:rgba(246, 239, 249, 0.7);
+    border-radius: 15px;
+    border: 1px inset rgb(97, 94, 98);
+    padding: 2%;
+    text-align: center;
+    display: block;
+    margin: 5% auto;
+    width: 20%;
+}
+
+#submit:hover{
+    background-color:rgb(207, 188, 214);
+    color:rgb(253, 253, 253);
+}
+
+
+#kommentar{
+    color:rgb(10, 10, 10);
+    background-color:rgba(136, 71, 127, 0.2);
+    border: 1px inset rgb(97, 94, 98);
+    border-radius: 15px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: 150px;
+}
+
+textarea{
+    color:rgb(10, 10, 10);
+    background-color:rgb(207, 188, 214);
+    text-align: center;
+    display: block;
+    width: 50%;
+    border: 1px solid rgb(85, 49, 99);
+}
+.box{
+    color:rgb(142, 139, 146);
+    background-color: rgba(243, 240, 240, 0.4);
+    width: 50%;
+    margin: 0 auto;
+    padding: 5%;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 1px rgba(27, 26, 28, 0.3);
+}
+
+.blogginlagg {
+    display: block;
+    text-align: center;
+    margin: 0 auto;  
+}
+
+p{
+    text-align: center;
+    color:rgb(124, 88, 130);
+    margin-top: 3%;
+}
+
+h2{
+    margin:10% 0% 3% auto;
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 7px;
+    background-color: rgb(109, 90, 113, 0.3); 
+    color: rgb(186, 167, 185);
+    
+    text-align: center;
+    display: block;
+    padding: 2%;
+    border-style: none;
+}
+.intro{
+    text-align: center;
+    margin: 0 auto;
+    color:rgb(255, 255, 255);
+}  
+
+h3{
+    margin-bottom: 3%;
+    text-align: center;
+    font-weight: lighter;
+    background-color:rgba(174, 120, 167, 0.3); 
+    padding: 2%;
+    border: none;
+    border-radius: 15px;
+    color: rgb(125, 121, 129);
+}
+
+h1{ 
+    background-color: rgb(255, 255, 255,  0.3);  
+    letter-spacing: 5px;
+    color:rgb(158, 141, 169);
+    text-align: center;
+    display: block;
+    padding: 2%;
+    border-style: none;
+}
+
+.inlagg-ram {
+        background-image: url("mountais3.jpg");
+        size: fit-content;  
+        box-shadow: 4px 3px 4px 2px rgba(93, 81, 104, 0.5);
+        text-align: center;
+        margin: 0 auto;
+        width: 60% ;
+        padding: 4%;
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 2px rgb(41, 31, 49);
+        border-radius: 15px;
+    }
+
+    @media screen and (max-width: 900px) {
+        .inlagg-ram {
+            width: 100%;
+            background-image: none;
+            background-color: rgb(214, 211, 223);
+        }
+        body{
+            width: 100%;
+            margin: 0 auto;
+            background-image: none;
+        }
+
+        .box{
+            margin-top: 5%;
+            width: 100%;
+            background-color: rgb(214, 211, 223);
+        }
+
+        h1{
+            margin-left: 5%;
+            margin-bottom: 5%;
+            width: 100%;
+            margin: 0 auto;
+            background: none;
+            color: rgb(243, 243, 243);
+        }
+
+        h2{
+            margin-left: 5%;
+            margin-bottom: 5%;
+            width: 100%;
+            background: none;
+            color: rgb(243, 243, 243);
+        }
+
+        p{  
+            margin-left: 5%;
+            margin-bottom: 5%;
+            width: 100%;
+            color: rgb(243, 243, 243);
+        }
+
+        
+    }
