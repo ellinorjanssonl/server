@@ -1,5 +1,13 @@
 [
   {
+    "namn": "Kalle",
+    "Email": "kalle.anka@telia.com",
+    "Adress": "Galonvägen 1, Bromma.",
+    "Kommentar": "Här kommer ett inlägg till den här bloggen. Det kommer vara ganska mycket text i detta inlägg eftersom jag vill försäkra mig om att man max ska kunna skriva 200 ord. Inlägget ska inte kunna vara längre än detta. Det kommer vara ganska mycket text i detta inlägg eftersom jag vill försäkra mig om att man max ska kunna skriva 200 ord. Inlägget ska inte kunna vara längre än detta. Det kommer vara ganska mycket text i detta inlägg eftersom jag vill försäkra mig om att man max ska kunna skriva 200 ord. Inlägget ska inte kunna vara längre än detta. Det kommer vara ganska mycket text i detta inlägg eftersom jag vill försäkra mig om att man max ska kunna skriva 200 ord. Inlägget ska inte kunna vara längre än detta. Det kommer vara ganska mycket text i detta inlägg eftersom jag vill försäkra mig om att man max ska kunna skriva 200 ord. Inlägget ska inte kunna vara längre än detta. Det kommer vara ganska mycket text i detta inlägg eftersom jag vill försäkra mig om att man max ska kunna skriva 200 ord. Inlägget ska inte kunna vara längre än detta. Det kommer vara ganska mycket text",
+    "submit": "Skicka",
+    "timestamp": "2023-11-30 12:17"
+  },
+  {
     "namn": "Ellinor",
     "Email": "ellinor_jansson@hotmail.com",
     "Adress": "svandammsvägen 17a",
