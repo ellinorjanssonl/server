@@ -2,7 +2,6 @@ let express = require("express"); // installera express
 let app = express(); // skapa ett express server-objekt
 let port = 8080; // ... som körs på port 8080 // installera mysql
 let mysql = require("mysql"); // installera mysql
-let path = require("path"); // installera path
 
 let httpServer = app.listen(port, function () {
   console.log(`Webbserver körs på port ${port}`); // samma som "Webbserver körs på port " + port
@@ -15,8 +14,6 @@ app.use(express.urlencoded({ extended: true }));
 
 //hämtar filer från mappen filer
 app.use(express.static('filer'));
-
-
 
 //hämtar login.html
 app.get("/", function (req, res) {
@@ -103,6 +100,7 @@ app.post("/nyttinlagg", function (req, res) {
     res.send(html);
     });
   
+    // gör en fuktion som ser till att man max kan skriva 200 ord i kommentaren
     function begransaOrd(text, maxOrd) {
       let ord = text.split(/\s+/);
       if (ord.length > maxOrd) {
@@ -110,8 +108,6 @@ app.post("/nyttinlagg", function (req, res) {
       }
       return text;
   }
-
-  // Function to update the likes count in the UI
 
 
 
